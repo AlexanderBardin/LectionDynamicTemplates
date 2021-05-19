@@ -1,156 +1,156 @@
 {#Пример 1#}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы</h1>#}
-{#    <h1 style="color: blue">Заголовок страницы</h1>#}
-{#</body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы</h1>
+    <h1 style="color: blue">Заголовок страницы</h1>
+</body>
+</html>
 
 
 {#Пример 2#}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы</h1>#}
-{#    <h2>{{ name }}</h2>#}
-{#</body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы</h1>
+    <h2>{{ name }}</h2>
+</body>
+</html>
 
 
 {#Пример 3#}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы</h1>#}
-{#    <p>{{ person.name }}</p>#}
-{#    <p>{{ person.age }}</p>#}
-{#</body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы</h1>
+    <p>{{ person.name }}</p>
+    <p>{{ person.age }}</p>
+</body>
+</html>
 
 
 {#Пример 3#}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы</h1>#}
-{#    <p>{{ person.info }}</p>#}
-{#</body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы</h1>
+    <p>{{ person.info }}</p>
+</body>
+</html>
 
 
 {#Пример 5 - ТЕГИ  тег for #}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы </h1>#}
-{#        {% for item in data %}#}
-{#            <p>{{ item.info }}</p>#}
-{#        {% endfor %}#}
-{#    </body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы </h1>
+        {% for item in data %}
+            <p>{{ item.info }}</p>
+        {% endfor %}
+    </body>
+</html>
 
 
 {#Пример 6 - ТЕГИ  тег for  + if#}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы </h1>#}
-{#        {% for item in data %}#}
-{#            {% if item.age > 20 %}#}
-{#            <p>{{ item.info }}</p>#}
-{#            {% endif %}#}
-{#        {% endfor %}#}
-{#    </body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы </h1>
+        {% for item in data %}
+            {% if item.age > 20 %}
+            <p>{{ item.info }}</p>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
 
 
 {#Пример 7 - ТЕГИ  тег for  + cycle#}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы </h1>#}
-{#        {% for item in data %}#}
-{#            {% cycle 'red' 'blue' as color silent%}#}
-{#            <p style="background-color: {{ color }}">{{ item.info }}</p>#}
-{#        {% endfor %}#}
-{#    </body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы </h1>
+        {% for item in data %}
+            {% cycle 'red' 'blue' as color silent%}
+            <p style="background-color: {{ color }}">{{ item.info }}</p>
+        {% endfor %}
+    </body>
+</html>
 
 
 {#Пример 8 - ТЕГИ  тег url #}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы </h1>#}
-{#    <a href="{% url "date-time" %}"> Нажми меня</a>#}
-{#    </body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы </h1>
+    <a href="{% url "date-time" %}"> Нажми меня</a>
+    </body>
+</html>
 
 
 {#Пример 9 - Фильтры #}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы </h1>#}
-{#    <p>{{ datetime }}</p>#}
-{#    <p>{{ datetime|date:"D d M Y" }}</p>#}
-{#    <br>#}
-{#    <p>{{ data|slice:":10" }}</p>#}
-{#    </body>#}
-{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы </h1>
+    <p>{{ datetime }}</p>
+    <p>{{ datetime|date:"D d M Y" }}</p>
+    <br>
+    <p>{{ data|slice:":10" }}</p>
+    </body>
+</html>
 
 
 {#Пример 10  - Фильтры пишем свой фильтр #}
-{#{% load my_filter %}  {# Не забываем загрузить наши фильтры #}
-{##}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>Заголовок страницы </h1>#}
-{#    <p>{{ data|my_upper }}</p>#}
-{#    </body>#}
-{#</html>#}
+{% load my_filter %}  {# Не забываем загрузить наши фильтры
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Заголовок страницы </h1>
+    <p>{{ data|my_upper }}</p>
+    </body>
+</html>
 
 
 {#Пример 11  - Наследование #}
